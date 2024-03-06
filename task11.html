@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task11</title>
+</head>
+<body>
+
+	<script>
+		
+let arr=[1, 5, 0, -5, 30, 100, -500, 0, 100, 55];
+console.log(Math.max(...arr));
+let m = arr.filter(x => x< 5).map(x => x);
+console.log(m);
+let aux;
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - i; j++) {
+        if (arr[j] < arr[j + 1]) {
+            aux = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = aux;
+        }
+    }
+}
+console.log("sortat "+ arr);
+let s=0;
+
+for(let i=0; i<arr.lenght; i++; i++){
+	s+=arr[i];
+}
+let med=s/arr.length;
+console.log(med);
+
+
+
+
+	</script>
+
+</body>
+</html>
