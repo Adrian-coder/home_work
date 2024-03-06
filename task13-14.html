@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task11</title>
+</head>
+<body>
+
+	<script>
+		
+		const styles = ['Джаз', 'Блюз'];
+styles.push('Рок-н-ролл');
+console.log(styles);
+
+
+const middleIndex = Math.floor(styles.length / 2);
+styles[middleIndex] = 'Классика';
+console.log(styles);
+
+
+const firstElement = styles.shift();
+console.log(firstElement);
+console.log(styles);
+
+
+styles.unshift('Рэп', 'Регги');
+console.log(styles);
+
+
+
+
+
+	</script>
+
+</body>
+</html>
